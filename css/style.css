@@ -53,30 +53,25 @@ form .col-12 button {
 /* sidenav */
 
 /* main */
-.purchases {
-  direction: ltr;
-  background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: normal;
-  align-items: flex-start;
-  align-content: normal;
-}
+.purchases,
 .sales {
-  background-color: blue;
   direction: ltr;
   display: flex;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: normal;
   align-items: flex-start;
   align-content: normal;
+  justify-content: center;
 }
 
+.purchases h6,
+.sales h6 {
+  background-color: white;
+  width: 100%;
+}
 .card {
   margin: 10px;
   border-radius: 20px;
