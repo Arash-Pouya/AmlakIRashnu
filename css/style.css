@@ -1,24 +1,37 @@
 body {
   direction: rtl;
+  font-family: Sahel;
 }
-
+@font-face {
+  font-family: Sahel;
+  src: url(./Sahel-SemiBold.ttf);
+}
 #LI {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 /* sidenav */
+#Sidenav {
+  height: auto;
+}
 #checkbox {
-  background-color: red;
+  direction: rtl;
+
+  /* background-color: red; */
 }
 #checkbox ul {
-  float: right;
-  -moz-column-count: 2;
+  overflow: hidden;
+  /* margin: auto -3em 1em 0; */
+  padding: 0;
+  /* position:relative; */
+  /* float: right; */
+  /* -moz-column-count: 2;
   -moz-column-gap: 20%;
   -webkit-column-count: 2;
   -webkit-column-gap: 20%;
   column-count: 2;
-  column-gap: 20%;
+  column-gap: 20%; */
 }
 #checkbox li {
   display: flex;
@@ -28,4 +41,62 @@ body {
   margin-left: 10px;
 }
 
+#inputs input {
+  margin: 5px;
+}
+
+form .col-12 button {
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* sidenav */
+
+/* main */
+.purchases {
+  direction: ltr;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: normal;
+  align-items: flex-start;
+  align-content: normal;
+}
+.sales {
+  background-color: blue;
+  direction: ltr;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: flex-start;
+  align-content: normal;
+}
+
+.card {
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 18px 4px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  border-radius: 25px 25px 0px 0px;
+  padding: 10px;
+}
+.purchases .list-group-item,
+.sales .list-group-item {
+  text-align: right;
+}
+.purchases .card-body button,
+.sales .card-body button {
+  width: 100%;
+}
+.purchases .card-body button a,
+.sales .card-body button a {
+  color: white;
+  text-decoration: none;
+}
+/* main */
