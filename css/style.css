@@ -94,4 +94,67 @@ form .col-12 button {
   color: white;
   text-decoration: none;
 }
+
 /* main */
+#LI {
+  /* display: block; */
+}
+#Sidenavdropdown {
+  display: none;
+}
+#bottom {
+  display: none;
+}
+@media only screen and (max-width: 575px) {
+  #bottom button {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.5em;
+    justify-content: center;
+    line-height: 1.5;
+    padding: calc(0.5em - 1px) 1em;
+    margin: 0.5em;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  #bottom button a {
+    text-decoration: none;
+    color: white;
+  }
+  #bottom {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.605);
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    font-size: 14px;
+    width: 100%;
+
+    font-weight: normal;
+  }
+  #Sidenav {
+    display: none;
+  }
+  #LI {
+    display: none;
+  }
+  #Sidenavdropdown {
+    display: block;
+  }
+}
