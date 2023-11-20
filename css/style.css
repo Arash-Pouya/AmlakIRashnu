@@ -94,7 +94,10 @@ form .col-12 button {
   color: white;
   text-decoration: none;
 }
-
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
+}
 /* main */
 #LI {
   /* display: block; */
@@ -107,13 +110,12 @@ form .col-12 button {
 }
 @media only screen and (max-width: 575px) {
   #bottom button {
-    background-color: initial;
+    /* background-color: initial; */
     background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
-    color: #ffffff;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px; */
     cursor: pointer;
-    border-radius: 0.5em;
+    border-radius: 1em;
+    border: none;
     cursor: pointer;
     display: inline-flex;
     font-size: 1rem;
@@ -136,7 +138,7 @@ form .col-12 button {
   }
   #bottom {
     display: block;
-    background-color: rgba(255, 255, 255, 0.605);
+    background-color: rgba(255, 255, 255, 0.267);
     backdrop-filter: blur(20px);
     display: flex;
     flex-direction: row;
