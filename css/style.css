@@ -10,8 +10,10 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 /* sidenav */
+
 #Sidenav {
   height: auto;
 }
@@ -140,9 +142,9 @@ form .col-12 button {
     display: block;
     background-color: rgba(255, 255, 255, 0.267);
     backdrop-filter: blur(20px);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
     position: fixed;
     bottom: 0;
     font-size: 14px;
@@ -158,5 +160,9 @@ form .col-12 button {
   }
   #Sidenavdropdown {
     display: block;
+  }
+  #checkbox {
+    background-color: red;
+    margin-right: 10px;
   }
 }
