@@ -72,11 +72,11 @@
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                   <label class="form-check-label" for="flexRadioDefault2">کرایه</label>
                   <input type="text" class="form-control" />
-                  <input type="checkbox" class="form-check-input" id="check12" name="option12" value="something" />
-                  <label class="form-check-label" for="check12">جابه جایی</label>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                  <label class="form-check-label" for="flexRadioDefault3">جابه جایی</label>
                   <input type="text" class="form-control" />
-                  <input type="checkbox" class="form-check-input" id="check13" name="option13" value="something" />
-                  <label class="form-check-label" for="check13">پیش فروش</label>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" />
+                  <label class="form-check-label" for="flexRadioDefault4">پیش فروش</label>
                   <input type="text" class="form-control" />
                 </div>
                 <hr />
@@ -140,12 +140,12 @@
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                 <label class="form-check-label" for="flexRadioDefault2">کرایه</label>
                 <input type="text" class="form-control" />
-                <input type="checkbox" class="form-check-input" id="check12" name="option12" value="something" />
-                <label class="form-check-label" for="check12">جابه جایی</label>
-                <input type="text" class="form-control" />
-                <input type="checkbox" class="form-check-input" id="check13" name="option13" value="something" />
-                <label class="form-check-label" for="check13">پیش فروش</label>
-                <input type="text" class="form-control" />
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault03" onclick="enablecheckbox()" />
+                <label class="form-check-label" for="flexRadioDefault3">جابه جایی</label>
+                <input type="text" class="form-control" disabled id="forradio03" />
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault04" onclick="enablecheckbox()" />
+                <label class="form-check-label" for="flexRadioDefault04">پیش فروش</label>
+                <input type="text" disabled id="forradio04" class="form-control" />
               </div>
               <hr />
               <div class="col">
@@ -168,46 +168,38 @@
             <div class="col">
               <h6>خرید</h6>
               <div class="col-12 purchases">
+                <!-- card start-->
                 <div class="card" style="width: 16rem">
                   <h5 class="card-title">ویلا</h5>
                   <p class="card-text">دارای 100 متر زیر بنا، دارای 80 متر باغچه</p>
                   <div class="card-body">
-                    <button type="button" class="btn btn-success"><a href="#" class="card-link">مشاهده</a></button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">مشاهده</button>
                   </div>
-                </div>
-                <div class="card" style="width: 16rem">
-                  <h5 class="card-title">ویلا</h5>
-                  <p class="card-text">دارای 100 متر زیر بنا، دارای 80 متر باغچه</p>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-success"><a href="#" class="card-link">مشاهده</a></button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">اینجا یه لیست هست که نشون میده خونه چه ویژگی هایی داره</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ویرایش</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">معامله</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <!-- Modal -->
                 </div>
-                <div class="card" style="width: 16rem">
-                  <h5 class="card-title">ویلا</h5>
-                  <p class="card-text">دارای 100 متر زیر بنا، دارای 80 متر باغچه</p>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-success"><a href="#" class="card-link">مشاهده</a></button>
-                  </div>
-                </div>
-                <div class="card" style="width: 16rem">
-                  <h5 class="card-title">ویلا</h5>
-                  <p class="card-text">دارای 100 متر زیر بنا، دارای 80 متر باغچه</p>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-success"><a href="#" class="card-link">مشاهده</a></button>
-                  </div>
-                </div>
+                <!-- card end-->
               </div>
             </div>
             <div class="col">
               <h6>فروش</h6>
               <div class="co1-12 sales">
-                <div class="card" style="width: 16rem">
-                  <h5 class="card-title">ویلا</h5>
-                  <p class="card-text">دارای 100 متر زیر بنا، دارای 80 متر باغچه</p>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-success"><a href="#" class="card-link">مشاهده</a></button>
-                  </div>
-                </div>
                 <div class="card" style="width: 16rem">
                   <h5 class="card-title">ویلا</h5>
                   <p class="card-text">دارای 100 متر زیر بنا، دارای 80 متر باغچه</p>
@@ -221,12 +213,13 @@
         </div>
       </div>
     </div>
+
     <div id="bottom">
       <button><a href="">فایل ها</a></button>
       <button><a href="">بایگانی</a></button>
       <button><a href="">چاپ فهرست</a></button>
     </div>
-
+    <script src="../script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
