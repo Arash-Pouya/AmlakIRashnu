@@ -134,23 +134,29 @@ form .col-12 button {
     vertical-align: top;
     white-space: nowrap;
   }
-  #bottom button a {
+  #bottom button a,
+  #bottom button span {
     text-decoration: none;
     color: white;
   }
+
   #bottom {
     display: block;
-    background-color: rgba(255, 255, 255, 0.267);
+    background-color: rgba(0, 0, 0, 0.169);
     backdrop-filter: blur(20px);
     /* display: flex; */
     /* flex-direction: row; */
-    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    display: inline-block;
+    text-align: center;
     position: fixed;
     bottom: 0;
     font-size: 14px;
     width: 100%;
-
     font-weight: normal;
+  }
+  #bottom img {
+    max-width: 10%;
   }
   #Sidenav {
     display: none;
@@ -161,8 +167,9 @@ form .col-12 button {
   #Sidenavdropdown {
     display: block;
   }
-  #checkbox {
-    background-color: red;
+  #checkbox,
+  #inputs {
+    margin-top: 10px;
     margin-right: 10px;
   }
 }
