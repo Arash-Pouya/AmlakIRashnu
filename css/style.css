@@ -20,6 +20,23 @@ body {
   border: 3px solid red;
 }
 /* sidenav */
+.uk-slideshow-items {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; */
+}
+.uk-slideshow-items li {
+  /* background-color: violet;
+  max-width: 50%; */
+}
+.uk-slideshow-items li img {
+  /* background-color: red;
+  max-width: 50%;
+  height: 50%; */
+}
 
 #Sidenav {
   height: auto;
