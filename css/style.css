@@ -20,24 +20,17 @@ body {
   border: 3px solid red;
 }
 /* sidenav */
-.uk-slideshow-items {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center; */
+.carousel-inner .carousel-item {
+  /* background-color: red; */
 }
-.uk-slideshow-items li {
-  /* background-color: violet;
-  max-width: 50%; */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 7px;
 }
-.uk-slideshow-items li img {
-  /* background-color: red;
-  max-width: 50%;
-  height: 50%; */
+.carousel-inner .carousel-item img {
+  max-width: 100%;
 }
-
 #Sidenav {
   height: auto;
 }
@@ -193,6 +186,10 @@ form .col-12 button {
   }
   #Sidenavdropdown {
     display: block;
+  }
+  #Sidenavdropdowns {
+    overflow-x: scroll;
+    height: 500px;
   }
   #checkbox,
   #inputs {
