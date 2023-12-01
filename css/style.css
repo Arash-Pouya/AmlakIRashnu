@@ -20,17 +20,7 @@ body {
   border: 3px solid red;
 }
 /* sidenav */
-.carousel-inner .carousel-item {
-  /* background-color: red; */
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: black;
-  border-radius: 7px;
-}
-.carousel-inner .carousel-item img {
-  max-width: 100%;
-}
+
 #Sidenav {
   height: auto;
 }
@@ -117,7 +107,34 @@ form .col-12 button {
   --bs-tooltip-bg: var(--bd-violet-bg);
   --bs-tooltip-color: var(--bs-white);
 }
+
+/* /modal /*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 7px;
+}
+.carousel-inner .carousel-item img {
+  max-width: 100%;
+}
+/* /modal /*/
+
 /* main */
+
+/* //////add page////// */
+#FormAddItem {
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 7px 0px 38px 8px rgba(0, 0, 0, 0.1);
+}
+#FormAddItem form .col-md-4 {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+/* //////add page////// */
+
 #LI {
   /* display: block; */
 }
