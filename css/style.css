@@ -163,6 +163,29 @@ form .col-12 button {
 #FormAddItem form .col-md-8 textarea {
   height: 200px;
 }
+#FormAddItem form .col-md-7 .col-5 {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+#FormAddItem #form-check {
+  /* display: flex;
+  flex-direction: row; */
+  /* background-color: red;
+  display: flex; */
+}
+
+#FormAddItem #form-check li {
+  /* background-color: red; */
+  display: flex;
+  margin: 5px;
+}
+#FormAddItem #form-check li input {
+  /* background-color: #ff7e31; */
+  margin-right: 10px;
+}
+
 /* //////add page////// */
 
 #LI {
