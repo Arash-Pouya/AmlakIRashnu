@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/SingInstyle.css" />
+    <title>SingIn</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main sing-up">
+        <div class="sing-in-form form-container">
+          <h1>ورود</h1>
+          <form onsubmit="event.preventDefault();" id="sign-in">
+            <input type="email" placeholder="آدرس ایمیل" />
+            <input type="password" placeholder="رمز عبور" />
+            <!-- <p><a>forgot your password?</a></p> -->
+            <button type="submit">ورود</button>
+          </form>
+        </div>
+        <div class="sing-up-form form-container">
+          <h1>ثبت نام</h1>
+          <form onsubmit="event.preventDefault();" id="sign-out">
+            <input type="text" placeholder="نام کاربری" />
+            <input type="email" placeholder="آدرس ایمیل" />
+            <input type="password" placeholder="رمز عبور" />
+            <!-- <p><a>forgot your password?</a></p> -->
+            <button type="submit">ثبت نام</button>
+          </form>
+        </div>
+        <div class="sliding-board">
+          <div class="wide-borad">
+            <div class="board sing-in">
+              <h1>!خوش آمدید</h1>
+              <p>در صورتی که از قبل عضو شده اید بر روی دکمه زیر کلیک نمایید</p>
+              <button class="singIn">ورود</button>
+            </div>
+            <div class="board sing-up">
+              <h1>سلام دوست من</h1>
+              <p>برای ثبت نام بر روی دکمه زیر کلیک نماید</p>
+              <button class="singUp">ثبت نام</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../script/script.js"></script>
+  </body>
+</html>
