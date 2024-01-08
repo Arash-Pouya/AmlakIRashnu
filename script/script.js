@@ -19,6 +19,11 @@ function enablecheckbox() {
   text3 = document.getElementById("forradio003");
   text4 = document.getElementById("forradio004");
 
+  if (document.getElementById("flexRadioDefault02").checked) {
+    text0.removeAttribute("disabled", "");
+    text.setAttribute("disabled", "");
+    text2.setAttribute("disabled", "");
+  }
   if (document.getElementById("flexRadioDefault01").checked) {
     text0.removeAttribute("disabled", "");
     text.setAttribute("disabled", "");
@@ -34,7 +39,12 @@ function enablecheckbox() {
     text.setAttribute("disabled", "");
     text0.setAttribute("disabled", "");
   }
-  if (document.getElementById("flexRadioDefault001, flexRadioDefault002").checked) {
+  if (document.getElementById("flexRadioDefault002").checked) {
+    text01.removeAttribute("disabled", "");
+    text3.setAttribute("disabled", "");
+    text4.setAttribute("disabled", "");
+  }
+  if (document.getElementById("flexRadioDefault001").checked) {
     text01.removeAttribute("disabled", "");
     text3.setAttribute("disabled", "");
     text4.setAttribute("disabled", "");

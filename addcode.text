@@ -1,7 +1,7 @@
 add line 171 {
 
 <div class="col">
-  <h6>خرید</h6>
+  <h6>رهن</h6>
   <div class="col-12 purchases">
     <!-- card start-->
     <div class="card" style="width: 16rem">
@@ -68,6 +68,39 @@ add line 171 {
     </div>
     <!-- card end-->
   </div>
+</div>
+
+} delete col in lline 70 and replace{
+
+<div class="col">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault01" onclick="enablecheckbox()" />
+  <label class="form-check-label" for="flexRadioDefault1"> فروش </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault02" onclick="enablecheckbox()" />
+  <label class="form-check-label" for="flexRadioDefault2">کرایه</label>
+  <input type="text" class="form-control" disabled id="forradio02" />
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault03" onclick="enablecheckbox()" />
+  <label class="form-check-label" for="flexRadioDefault3">جابه جایی</label>
+  <input type="text" class="form-control" disabled id="forradio03" />
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault04" onclick="enablecheckbox()" />
+  <label class="form-check-label" for="flexRadioDefault04">پیش فروش</label>
+  <input type="text" disabled id="forradio04" class="form-control" />
+</div>
+
+} delete col in lline 278 and replace{
+
+<div class="col">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault001" onclick="enablecheckbox()" />
+  <label class="form-check-label" for="flexRadioDefault01"> فروش </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault002" onclick="enablecheckbox()" />
+  <label class="form-check-label" for="flexRadioDefault02">کرایه</label>
+  <input type="text" class="form-control" disabled id="forradio002" />
+  <input type="text" class="form-control" />
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault003" onclick="enablecheckbox()" />
+  <label class="form-check-label" for="flexRadioDefault3">جابه جایی</label>
+  <input type="text" class="form-control" disabled id="forradio003" />
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault004" onclick="enablecheckbox()" />
+  <label class="form-check-label" for="flexRadioDefault004">پیش فروش</label>
+  <input type="text" disabled id="forradio004" class="form-control" />
 </div>
 
 } add style.css file line 101 { .col h6 { margin-top: 30px; } } add style.css file line 112{ .card h5 { margin-top: 20px; } }
